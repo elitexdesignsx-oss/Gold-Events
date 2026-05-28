@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, MessageCircle, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -66,34 +65,27 @@ export default function Navbar() {
           </div>
         </nav>
       </header>
-      <AnimatePresence>
-        {open ? (
-          <motion.div className="mobile-menu" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <button className="icon-btn mobile-menu-close" type="button" onClick={() => setOpen(false)} aria-label="Close menu">
-              <X size={20} />
-            </button>
-            <div className="mobile-menu-logo nav-wordmark">
-              <span className="nav-wordmark-title">Gold Events</span>
-              <span className="nav-wordmark-motto">{t('nav.motto')}</span>
-            </div>
-            <div className="mobile-menu-links">
-              {links.map((link, index) => (
-                <motion.div
-                  key={link.to}
-                  initial={{ opacity: 0, y: 18 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.06 }}
-                >
-                  <NavLink to={link.to} onClick={() => setOpen(false)}>
-                    {t(`nav.${link.key}`)}
-                  </NavLink>
-                </motion.div>
-              ))}
-            </div>
-            <LanguageSwitcher />
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+      {open ? (
+        <div className="mobile-menu">
+          <button className="icon-btn mobile-menu-close" type="button" onClick={() => setOpen(false)} aria-label="Close menu">
+            <X size={20} />
+          </button>
+          <div className="mobile-menu-logo nav-wordmark">
+            <span className="nav-wordmark-title">Gold Events</span>
+            <span className="nav-wordmark-motto">{t('nav.motto')}</span>
+          </div>
+          <div className="mobile-menu-links">
+            {links.map((link) => (
+              <div key={link.to}>
+                <NavLink to={link.to} onClick={() => setOpen(false)}>
+                  {t(`nav.${link.key}`)}
+                </NavLink>
+              </div>
+            ))}
+          </div>
+          <LanguageSwitcher />
+        </div>
+      ) : null}
     </>
   );
 }

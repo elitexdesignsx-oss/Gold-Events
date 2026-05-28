@@ -1873,6 +1873,28 @@ img {
 }
 
 @media (max-width: 859px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    transition: none;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  .site-shell {
+    overflow-x: hidden;
+  }
+
+  .section-pad {
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
+    padding-block: clamp(52px, 12vw, 84px);
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -1912,6 +1934,97 @@ img {
 
   .nav-actions {
     min-width: 88px;
+  }
+
+  .hero {
+    min-height: 92svh;
+  }
+
+  .hero-ambient {
+    animation: none;
+    background-size: 100% 100%;
+    transform: none;
+    will-change: auto;
+  }
+
+  .hero-glow,
+  .hero-line,
+  .hero-content::before,
+  .floating-feather {
+    display: none;
+  }
+
+  .scroll-indicator,
+  .whatsapp-fab,
+  .marquee-track {
+    animation: none;
+    will-change: auto;
+  }
+
+  .marquee-track {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .navbar,
+  .navbar-inner,
+  .mobile-menu,
+  .modal-backdrop,
+  .glass-card,
+  .review-card,
+  .language-switcher,
+  .btn,
+  .icon-btn {
+    backdrop-filter: none;
+  }
+
+  .product-card,
+  .review-card,
+  .insta-item,
+  .highlight-thumb,
+  .product-media img,
+  .product-media::before,
+  .insta-item .visual-frame img,
+  .reveal {
+    transition-duration: 120ms;
+    will-change: auto;
+  }
+
+  .product-card:hover,
+  .review-card:hover,
+  .insta-item:hover,
+  .highlight-item:hover .highlight-thumb {
+    transform: none;
+  }
+
+  .product-card:hover .product-media img,
+  .product-card:hover .product-media::before,
+  .insta-item:hover .visual-frame img {
+    filter: none;
+    transform: none;
+  }
+
+  .product-card:hover::after,
+  .insta-item:hover::before,
+  .insta-item:hover > span,
+  .product-overlay {
+    opacity: 0;
+  }
+
+  .highlight-grid,
+  .occasion-tabs {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x proximity;
+  }
+
+  .highlight-item,
+  .occasion-tabs button {
+    scroll-snap-align: start;
+  }
+
+  .gallery-grid {
+    columns: 2 148px;
   }
 }
 

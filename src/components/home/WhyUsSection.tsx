@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const items = [
@@ -30,21 +29,17 @@ export default function WhyUsSection() {
           <h2 className="section-title">{t('home.why')}</h2>
         </div>
         <div className="why-grid">
-          {items.map((item, index) => (
-            <motion.article
+          {items.map((item) => (
+            <article
               className="why-card glass-card"
               key={item.title}
-              initial={{ opacity: 0, y: 22 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-90px' }}
-              transition={{ delay: index * 0.1 }}
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d={item.path} />
               </svg>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
