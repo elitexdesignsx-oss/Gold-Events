@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalog": "Collection",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "motto": "Bespoke event favors"
+  },
+  "hero": {
+    "tagline": "The Art of Elegant Moments",
+    "subtagline": "Marrakech · Delivery across Morocco",
+    "discover": "Discover the Collection",
+    "whatsapp": "Contact Us on WhatsApp"
+  },
+  "home": {
+    "creations": "Our Creations",
+    "trust": "Trusted by elegant hosts",
+    "why": "Why Gold Events",
+    "instagram": "Follow us @gold_events1",
+    "ctaTitle": "Your event deserves the finest",
+    "ctaText": "Start creating your personalized favors today",
+    "ctaButton": "Create My Collection"
+  },
+  "catalog": {
+    "title": "Collection",
+    "subtitle": "Guest favors designed like couture pieces.",
+    "filters": "Filters",
+    "category": "Category",
+    "occasion": "Occasion",
+    "theme": "Theme",
+    "price": "Maximum budget",
+    "all": "All",
+    "inquiry": "Add to inquiry",
+    "quick": "View"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments, tables and details crafted in Marrakech and across Morocco.",
+    "order": "Order this style"
+  },
+  "about": {
+    "title": "A Maison devoted to details that linger.",
+    "manifesto": "Gold Events designs refined, personalized and memorable event favors for weddings, henna ceremonies, engagements and Moroccan celebrations.",
+    "history": "Our Story",
+    "atelier": "Our Marrakech Atelier",
+    "contact": "Reach us"
+  },
+  "contact": {
+    "title": "Create your collection",
+    "subtitle": "Tell us about your event. We will prepare an elegant, personalized proposal.",
+    "name": "Name",
+    "phone": "Phone / WhatsApp",
+    "occasion": "Occasion type",
+    "date": "Event date",
+    "guests": "Number of guests",
+    "message": "Message",
+    "send": "Send on WhatsApp",
+    "delivery": "Delivery available across Morocco"
+  }
+}

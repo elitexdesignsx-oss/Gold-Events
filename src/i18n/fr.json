@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "catalog": "Collection",
+    "gallery": "Galerie",
+    "about": "À Propos",
+    "contact": "Contact",
+    "motto": "Cadeaux d'événement sur mesure"
+  },
+  "hero": {
+    "tagline": "L'Art de Faire Ressentir",
+    "subtagline": "Marrakech · Livraison partout au Maroc",
+    "discover": "Découvrir la Collection",
+    "whatsapp": "Nous Contacter sur WhatsApp"
+  },
+  "home": {
+    "creations": "Nos Créations",
+    "trust": "Elles nous font confiance",
+    "why": "Pourquoi Gold Events",
+    "instagram": "Suivez-nous @gold_events1",
+    "ctaTitle": "Votre événement mérite le meilleur",
+    "ctaText": "Commencez à créer vos cadeaux personnalisés dès aujourd'hui",
+    "ctaButton": "Créer Ma Collection"
+  },
+  "catalog": {
+    "title": "Collection",
+    "subtitle": "Des cadeaux d'invités pensés comme des pièces de couture.",
+    "filters": "Filtres",
+    "category": "Catégorie",
+    "occasion": "Occasion",
+    "theme": "Thème",
+    "price": "Budget maximum",
+    "all": "Tout",
+    "inquiry": "Ajouter à ma demande",
+    "quick": "Voir"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Moments, tables et détails réalisés à Marrakech et partout au Maroc.",
+    "order": "Commander ce style"
+  },
+  "about": {
+    "title": "Une Maison dédiée aux détails qui restent.",
+    "manifesto": "Gold Events imagine des cadeaux d'événement raffinés, personnalisés et mémorables pour les mariages, hennés, fiançailles et célébrations marocaines.",
+    "history": "Notre Histoire",
+    "atelier": "Notre Atelier à Marrakech",
+    "contact": "Nous joindre"
+  },
+  "contact": {
+    "title": "Créons votre collection",
+    "subtitle": "Parlez-nous de votre événement. Nous préparons une proposition élégante et personnalisée.",
+    "name": "Nom",
+    "phone": "Téléphone / WhatsApp",
+    "occasion": "Type d'occasion",
+    "date": "Date de l'événement",
+    "guests": "Nombre d'invités",
+    "message": "Message",
+    "send": "Envoyer sur WhatsApp",
+    "delivery": "Livraison disponible partout au Maroc"
+  }
+}
