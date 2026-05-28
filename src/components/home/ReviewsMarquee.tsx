@@ -22,6 +22,7 @@ function ReviewCard({ review }: { review: (typeof reviews)[number] }) {
 
 export default function ReviewsMarquee() {
   const { t } = useTranslation();
+  const mobileRow = reviews;
   const firstRow = [...reviews.slice(0, 6), ...reviews.slice(0, 6)];
   const secondRow = [...reviews.slice(6), ...reviews.slice(6)];
 
@@ -34,6 +35,11 @@ export default function ReviewsMarquee() {
           ))}
         </div>
         <h2 className="section-title">{t('home.trust')}</h2>
+      </div>
+      <div className="review-carousel" aria-label="Client reviews">
+        {mobileRow.map((review) => (
+          <ReviewCard review={review} key={`${review.id}-mobile`} />
+        ))}
       </div>
       <div className="marquee" aria-label="Client reviews">
         <div className="marquee-track">

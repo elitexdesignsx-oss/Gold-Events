@@ -1091,6 +1091,10 @@ img {
   overflow: hidden;
 }
 
+.review-carousel {
+  display: none;
+}
+
 .marquee-track {
   display: flex;
   width: max-content;
@@ -1964,6 +1968,34 @@ img {
   .marquee-track {
     width: auto;
     flex-wrap: wrap;
+  }
+
+  .marquee {
+    display: none;
+  }
+
+  .review-carousel {
+    display: grid;
+    grid-auto-columns: minmax(272px, 82vw);
+    grid-auto-flow: column;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 4px 16px 18px;
+    scroll-padding-inline: 16px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .review-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-carousel .review-card {
+    width: auto;
+    min-height: 228px;
+    scroll-snap-align: center;
   }
 
   .navbar,
